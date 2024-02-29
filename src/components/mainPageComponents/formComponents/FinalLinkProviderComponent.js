@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTempletCollections } from "../TempletCollectionsProvider";
 import { useUserInfoCollections } from "../UserInfoProvider";
 import { FaRegCopy } from "react-icons/fa";
@@ -11,8 +11,21 @@ export default function FinalLinkProviderComponent() {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+  const [isMounted, setIsMounted] = useState(false);
+  let timeoutId = null;
+
+  useEffect(() => {
+    timeoutId = setTimeout(() => {
+      setIsMounted(true);
+    }, 100);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
   return (
-    <form onSubmit={handleSubmit} className=" w-full">
+    <form
+      onSubmit={handleSubmit}
+      className={` ${isMounted ? "slide-in5" : ""} opacity-0 w-full`}
+    >
       <div className="border p-5 mb-8 border-[#dec9ff5f] shadow-[#8d8d8d] shadow rounded relative">
         <div className=" mb-3 relative">
           <p className=" my-5 text-indigo-500 text-xl">

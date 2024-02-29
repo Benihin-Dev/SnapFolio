@@ -15,7 +15,8 @@
 }
 
 .darkPinkli > li {
-  color: rgb(191, 189, 189);
+  color: rgb(150, 141, 141);
+
 
   &:hover {
     color: #ff456e;

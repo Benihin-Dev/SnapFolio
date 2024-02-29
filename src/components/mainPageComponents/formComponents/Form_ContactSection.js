@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import LoadingComponent from "./LoadingComponent";
 import FinalLinkProviderComponent from "./FinalLinkProviderComponent";
@@ -20,6 +20,17 @@ export default function Form_ContactSection() {
       },
     }));
   };
+
+  const [isMounted, setIsMounted] = useState(false);
+  let timeoutId = null;
+
+  useEffect(() => {
+    timeoutId = setTimeout(() => {
+      setIsMounted(true);
+    }, 100);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   const PostUserDataOnDatabase = async () => {
     try {
@@ -54,7 +65,9 @@ export default function Form_ContactSection() {
       {componentState === "loading" ? (
         <LoadingComponent />
       ) : componentState === "normal" ? (
-        <form onSubmit={handleSubmit} className=" w-full">
+        <form onSubmit={handleSubmit} className={` ${
+          isMounted ? "slide-in5" : ""
+        } opacity-0 w-full`}>
           <div className="border p-5 mb-8 border-[#dec9ff5f] shadow-[#eeeeee57] shadow rounded relative">
             <h1 className=" absolute top-[-12px] text-sm bg-white text-gray-300">
               Contact Details

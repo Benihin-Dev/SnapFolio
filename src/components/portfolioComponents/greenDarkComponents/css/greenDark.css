@@ -16,7 +16,8 @@
 }
 
 .greenDarkli > li {
-  color: rgb(196, 196, 196);
+  color: rgb(150, 141, 141);
+
 
   &:hover {
     color: #61f1b7;

@@ -15,8 +15,9 @@
   background-color: #ffffff;
 }
 
-.yellowDarkli >li {
-  color: rgb(255, 255, 255);
+.yellowDarkli > li {
+  color: rgb(150, 141, 141);
+
   border-bottom: 2px solid transparent;
 
   &:hover {

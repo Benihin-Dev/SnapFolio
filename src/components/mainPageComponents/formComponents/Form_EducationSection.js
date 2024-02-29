@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { useUserInfoCollections } from "../UserInfoProvider";
 
 export default function Form_EducationSection() {
@@ -17,6 +17,16 @@ export default function Form_EducationSection() {
       },
     }));
   };
+  const [isMounted, setIsMounted] = useState(false);
+  let timeoutId = null;
+
+  useEffect(() => {
+    timeoutId = setTimeout(() => {
+      setIsMounted(true);
+    }, 100);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,7 +34,10 @@ export default function Form_EducationSection() {
     setCurrentForm("skillsSection");
   };
   return (
-    <form onSubmit={handleSubmit} className=" w-full">
+    <form
+      onSubmit={handleSubmit}
+      className={` ${isMounted ? "slide-in5" : ""} opacity-0 w-full`}
+    >
       <div className="border p-5 mb-8 border-[#dec9ff5f] shadow-[#eeeeee57] shadow rounded relative">
         <h1 className=" absolute top-[-12px] text-sm bg-white text-gray-300">
           Education Section

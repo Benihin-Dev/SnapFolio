@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useUserInfoCollections } from "../UserInfoProvider";
 import LinkProvideSection from "./LoadingComponent";
@@ -52,11 +52,24 @@ export default function Form_ProfilePic() {
     const file = event.target.files[0];
     setFile(file);
   };
+  const [isMounted, setIsMounted] = useState(false);
+  let timeoutId = null;
+
+  useEffect(() => {
+    timeoutId = setTimeout(() => {
+      setIsMounted(true);
+    }, 100);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   return (
     <>
       {loading === false ? (
-        <form onSubmit={submit} className=" w-full">
+        <form
+          onSubmit={submit}
+          className={` ${isMounted ? "slide-in5" : ""} opacity-0 w-full`}
+        >
           <div className="border mt-20 sm:mt-10 p-5 mb-4 border-[#dec9ff5f] shadow-[#eeeeee57] shadow rounded relative">
             <h1 className=" absolute top-[-12px] text-sm bg-white text-gray-300">
               Profile Picture

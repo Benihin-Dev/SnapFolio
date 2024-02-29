@@ -28,11 +28,11 @@ export default function HomePage() {
     return () => clearTimeout(timeoutId);
   }, []);
   return (
-    <div className="mx-auto px-3 sm:px-5 overflow-hidden h-screen pt-20 sm:w-4/5  relative">
+    <div className="mx-auto px-3 sm:px-5 overflow-hidden h-screen pt-20 sm:w-9/12  relative">
       <ul
         className={`${
           homeActiveComponent === "templetSelected" ? "hidden" : ""
-        } flex   font-ubuntu`}
+        } flex  font-ubuntu`}
       >
         <li
           onClick={() => {
@@ -40,9 +40,9 @@ export default function HomePage() {
           }}
           className={`${
             homeActiveComponent === "free"
-              ? "border-[#6995e0d1]  border-b-4"
+              ? "border-[#6995e0]  border-b-4"
               : "border-transparent"
-          } border-b-4 border-[#ffffff9c]  px-5 pb-2 text-[#063991] hover:border-[#6994e0e1] duration-200`}
+          } border-b-4 border-[#ffffff9c]  px-8 pb-2 text-[#063991] hover:border-[#6994e0e1] duration-200`}
         >
           Free
         </li>
@@ -54,7 +54,7 @@ export default function HomePage() {
             homeActiveComponent === "premium"
               ? "border-orange-300  border-b-4"
               : ""
-          } border-b-4 border-[#ffffff9c]  px-5 pb-2 text-orange-400 hover:border-orange-300 duration-200`}
+          } border-b-4 border-[#ffffff9c]  px-8 pb-2 text-orange-400 hover:border-orange-300 duration-200`}
         >
           Premium
         </li>
@@ -66,7 +66,7 @@ export default function HomePage() {
             : homeActiveComponent === "premium"
             ? "pt-8 border-t"
             : ""
-        }    h-screen scrollbarSize overflow-auto relative `}
+        }    h-screen scrollbarSize backdrop-blur-[3px] overflow-auto relative `}
       >
         {homeActiveComponent === "free" ? (
           <FreeTemplets />
@@ -78,7 +78,7 @@ export default function HomePage() {
           ""
         )}
       </div>
-      <div className=" absolute top-1 left-0 bgimage"></div>
+      <div className="bgimg h-screen w-screen top-0 left-0  "></div>
     </div>
   );
 }

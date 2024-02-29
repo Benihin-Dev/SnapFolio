@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useUserInfoCollections } from "../UserInfoProvider";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 
 export default function Form_UserID() {
   // const navigate = useNavigate();
@@ -53,9 +52,23 @@ export default function Form_UserID() {
     // navigate("/guest-link-show", { state: { fetchedGuestUserData } });
   };
 
+  const [isMounted, setIsMounted] = useState(false);
+  let timeoutId = null;
+
+  useEffect(() => {
+    timeoutId = setTimeout(() => {
+      setIsMounted(true);
+    }, 100);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   return (
     <>
-      <form onSubmit={handleSubmit} className=" w-full mt-10">
+      <form
+        onSubmit={handleSubmit}
+        className={` ${isMounted ? "slide-in5" : ""} opacity-0 w-full mt-10`}
+      >
         <div className="border p-5 mb-6 border-indigo-200 shadow-[#eeeeee57] shadow rounded relative">
           <div className=" mb-4 ">
             <label

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTempletCollections } from "./TempletCollectionsProvider";
 
 export default function FreeTemplets() {
@@ -25,8 +25,23 @@ export default function FreeTemplets() {
     setHomeActiveComponent("templetSelected");
   };
 
+  const [isMounted, setIsMounted] = useState(false);
+  let timeoutId = null;
+
+  useEffect(() => {
+    timeoutId = setTimeout(() => {
+      setIsMounted(true);
+    }, 100);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-5  md:gap-10 pb-40">
+    <div
+      className={` ${
+        isMounted ? "slide-in5" : ""
+      } opacity-0 grid grid-cols-2 sm:grid-cols-3 gap-5  md:gap-4 lg:gap-6 pb-40`}
+    >
       <div
         onClick={(event) => {
           handleSelectedTemplet(event);
@@ -159,22 +174,32 @@ export default function FreeTemplets() {
           className="border-2   duration-300 border-green-400 hover:border-green-600"
         />
       </div>
-      <div className=" text-center rounded hover:shadow-lg justify-center items-center border h-28 sm:h-full shadow border-[#0f387e4b]  bg-[#ffffffc6] relative flex   ">
-        <div className=" w-7 h-4  loadingParent flex items-center">
-          <div className=" w-2 border bg-gray-300 loadingChild"></div>
-          <div className=" w-2 border bg-gray-300 loadingChild"></div>
-          <div className=" w-2 border bg-gray-300 loadingChild"></div>
-          <div className=" w-2 border bg-gray-300 loadingChild"></div>
-          <div className=" w-2 border bg-gray-300 loadingChild"></div>
+      <div className=" rounded hover:shadow-lg justify-center items-center border h-28 sm:h-full shadow border-[#0f387e4b]  bg-[#ffffffc6] relative flex   ">
+        <div className=" w-3/4 ">
+          <div className=" w-7 h-4 justify-center mx-auto  loadingParent flex items-center">
+            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
+            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
+            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
+            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
+            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
+          </div>
+          <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
+            <h1>Templet is under development</h1>
+          </div>
         </div>
       </div>
-      <div className=" text-center rounded hover:shadow-lg justify-center items-center border h-28 sm:h-full shadow border-[#0f387e4b]  bg-[#ffffffc6] relative flex   ">
-        <div className=" w-7 h-4  loadingParent flex items-center">
-          <div className=" w-2 border bg-gray-300 loadingChild"></div>
-          <div className=" w-2 border bg-gray-300 loadingChild"></div>
-          <div className=" w-2 border bg-gray-300 loadingChild"></div>
-          <div className=" w-2 border bg-gray-300 loadingChild"></div>
-          <div className=" w-2 border bg-gray-300 loadingChild"></div>
+      <div className=" rounded hover:shadow-lg justify-center items-center border h-28 sm:h-full shadow border-[#0f387e4b]  bg-[#ffffffc6] relative flex   ">
+        <div className=" w-3/4 ">
+          <div className=" w-7 h-4 justify-center mx-auto  loadingParent flex items-center">
+            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
+            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
+            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
+            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
+            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
+          </div>
+          <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
+            <h1>Templet is under development</h1>
+          </div>
         </div>
       </div>
     </div>

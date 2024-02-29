@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ReactTyped } from "react-typed";
 
 export default function LinkProvideSection() {
+  const [isMounted, setIsMounted] = useState(false);
+  let timeoutId = null;
+
+  useEffect(() => {
+    timeoutId = setTimeout(() => {
+      setIsMounted(true);
+    }, 100);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
   return (
     <div>
-      <div className=" size-32 circleLoading mx-auto rounded-full  relative">
+      <div
+        className={` ${
+          isMounted ? "slide-in5" : ""
+        } opacity-0 size-32 circleLoading mx-auto rounded-full  relative`}
+      >
         <div className="absolute size-32 top-[-6px] left-[-6px]  circleLoading2 mx-auto rounded-full"></div>
       </div>
       <div className="  w-full mx-auto text-center mt-20">

@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useEffect , useState} from "react";
 import { useUserInfoCollections } from "../UserInfoProvider";
 
 export default function Form_AboutSection() {
@@ -16,13 +16,26 @@ export default function Form_AboutSection() {
     }));
   };
 
+  const [isMounted, setIsMounted] = useState(false);
+  let timeoutId = null;
+
+  useEffect(() => {
+    timeoutId = setTimeout(() => {
+      setIsMounted(true);
+    }, 100);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log(userData);
     setCurrentForm("profileSection");
   };
   return (
-    <form onSubmit={handleSubmit} className=" w-full">
+    <form onSubmit={handleSubmit} className={` ${
+      isMounted ? "slide-in5" : ""
+    } opacity-0 w-full`}>
       <div className="border p-5 mb-6 border-[#dec9ff5f] shadow-[#eeeeee57] shadow rounded relative">
         <h1 className=" absolute top-[-12px] text-sm bg-white text-gray-300">
           About Section
