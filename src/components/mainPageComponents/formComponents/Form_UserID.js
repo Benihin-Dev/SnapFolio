@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useUserInfoCollections } from "../UserInfoProvider";
 import axios from "axios";
+import { MdKeyboardBackspace } from "react-icons/md";
 
 export default function Form_UserID() {
   // const navigate = useNavigate();
@@ -94,6 +95,9 @@ export default function Form_UserID() {
             />
           </div>
           <div className="w-full flex justify-end relative">
+            <div onClick={()=>{setCurrentForm("welcomePara")}} className=" cursor-pointer flex justify-center items-center bg-slate-100 border border-gray-00 hover:border-gray-600 rounded px-3">
+              <MdKeyboardBackspace />
+            </div>
             <button
               className={` ${
                 loading === true

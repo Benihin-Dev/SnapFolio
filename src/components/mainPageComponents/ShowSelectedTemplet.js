@@ -68,17 +68,20 @@ export default function ShowSelectedTemplet() {
         </div>
         <div className="w-full px-0 overflow-hidden">
           <div className=" ">
+            <img
+              onClick={() => {
+                setActiveState("review");
+              }}
+              src={pics[1]}
+              alt=""
+              className="border sm:hidden flex w-9/12  border-gray-400 hover:border-gray-700"
+            />
             <div
               onClick={() => {
                 setActiveState("review");
               }}
               className="flex relative imageShowParent"
             >
-              <img
-                src={pics[1]}
-                alt=""
-                className="border sm:hidden flex  w-full  border-gray-400 hover:border-gray-700"
-              />
               <img
                 src={pics[0]}
                 alt=""

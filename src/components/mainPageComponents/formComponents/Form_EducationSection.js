@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useUserInfoCollections } from "../UserInfoProvider";
+import { MdKeyboardBackspace } from "react-icons/md";
 
 export default function Form_EducationSection() {
   const { currentForm, setCurrentForm, userData, setUserData } =
@@ -169,6 +170,14 @@ export default function Form_EducationSection() {
           />
         </div>
         <div className="w-full flex justify-end">
+          <div
+            onClick={() => {
+              setCurrentForm("profileSection");
+            }}
+            className="mt-2 cursor-pointer flex justify-center items-center bg-slate-100 border border-gray-00 hover:border-gray-600 rounded px-3"
+          >
+            <MdKeyboardBackspace />
+          </div>
           <button className="py-1 mt-2 w-full border border-indigo-400 text-white hover:bg-indigo-700 bg-indigo-500 rounded px-8 ">
             Next
           </button>

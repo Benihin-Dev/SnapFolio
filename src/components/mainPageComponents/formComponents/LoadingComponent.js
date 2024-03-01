@@ -17,13 +17,13 @@ export default function LinkProvideSection() {
       <div
         className={` ${
           isMounted ? "slide-in5" : ""
-        } opacity-0 size-32 circleLoading mx-auto rounded-full  relative`}
+        } opacity-0 size-32 circleLoading2 mx-auto rounded-full  relative`}
       >
-        <div className="absolute size-32 top-[-6px] left-[-6px]  circleLoading2 mx-auto rounded-full"></div>
+        <div className="absolute size-32 top-[-6px] left-[-6px]  opacity-40 circleLoading mx-auto rounded-full"></div>
       </div>
-      <div className="  w-full mx-auto text-center mt-20">
+      <div className="  w-full mx-auto text-center mt-[60px]">
         <p className=" text-gray-700">Please Wait..</p>
-        <p className=" mt-10 text-indigo-500">
+        <p className=" mt-8 text-indigo-500">
           <ReactTyped
             strings={[" Your Protfolio is in a Developing Stage.."]}
             typeSpeed={100}

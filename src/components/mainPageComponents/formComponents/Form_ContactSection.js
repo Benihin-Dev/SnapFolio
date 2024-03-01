@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import LoadingComponent from "./LoadingComponent";
 import FinalLinkProviderComponent from "./FinalLinkProviderComponent";
+import { MdKeyboardBackspace } from "react-icons/md";
 
 import { useUserInfoCollections } from "../UserInfoProvider";
 
@@ -65,9 +66,10 @@ export default function Form_ContactSection() {
       {componentState === "loading" ? (
         <LoadingComponent />
       ) : componentState === "normal" ? (
-        <form onSubmit={handleSubmit} className={` ${
-          isMounted ? "slide-in5" : ""
-        } opacity-0 w-full`}>
+        <form
+          onSubmit={handleSubmit}
+          className={` ${isMounted ? "slide-in5" : ""} opacity-0 w-full`}
+        >
           <div className="border p-5 mb-8 border-[#dec9ff5f] shadow-[#eeeeee57] shadow rounded relative">
             <h1 className=" absolute top-[-12px] text-sm bg-white text-gray-300">
               Contact Details
@@ -178,6 +180,14 @@ export default function Form_ContactSection() {
               />
             </div>
             <div className="w-full flex justify-end relative">
+              <div
+                onClick={() => {
+                  setCurrentForm("experienceSection");
+                }}
+                className="mt-3 cursor-pointer flex justify-center items-center bg-slate-100 border border-gray-00 hover:border-gray-600 rounded px-3"
+              >
+                <MdKeyboardBackspace />
+              </div>
               <button
                 className={` ${
                   componentState === "loading"

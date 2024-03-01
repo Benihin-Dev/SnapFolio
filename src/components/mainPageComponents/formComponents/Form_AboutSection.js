@@ -1,5 +1,6 @@
-import React , {useEffect , useState} from "react";
+import React, { useEffect, useState } from "react";
 import { useUserInfoCollections } from "../UserInfoProvider";
+import { MdKeyboardBackspace } from "react-icons/md";
 
 export default function Form_AboutSection() {
   const { currentForm, setCurrentForm, userData, setUserData } =
@@ -33,9 +34,10 @@ export default function Form_AboutSection() {
     setCurrentForm("profileSection");
   };
   return (
-    <form onSubmit={handleSubmit} className={` ${
-      isMounted ? "slide-in5" : ""
-    } opacity-0 w-full`}>
+    <form
+      onSubmit={handleSubmit}
+      className={` ${isMounted ? "slide-in5" : ""} opacity-0 w-full`}
+    >
       <div className="border p-5 mb-6 border-[#dec9ff5f] shadow-[#eeeeee57] shadow rounded relative">
         <h1 className=" absolute top-[-12px] text-sm bg-white text-gray-300">
           About Section
@@ -107,6 +109,14 @@ export default function Form_AboutSection() {
           />
         </div>
         <div className="w-full flex justify-end">
+          <div
+            onClick={() => {
+              setCurrentForm("idSection");
+            }}
+            className=" cursor-pointer flex justify-center items-center bg-slate-100 border border-gray-00 hover:border-gray-600 rounded px-3"
+          >
+            <MdKeyboardBackspace />
+          </div>
           <button className="py-1 w-full border border-indigo-400 text-white hover:bg-indigo-700 bg-indigo-500 rounded px-8 ">
             Next
           </button>

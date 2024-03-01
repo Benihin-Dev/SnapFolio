@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import aboutimg from "../../img/about.gif";
 import me from "../../img/me.png";
 
 export default function About() {
+  const [isMounted, setIsMounted] = useState(false);
+  let timeoutId = null;
+
+  useEffect(() => {
+    timeoutId = setTimeout(() => {
+      setIsMounted(true);
+    }, 100);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
   return (
-    <div className=" w-full font-ubuntu px-5 sm:px-0 sm:w-8/12  mx-auto mt-20">
-      <div className=" sm:flex pb-5 border-b">
+    <div
+      className={` ${
+        isMounted ? "slide-in5" : ""
+      } opacity-0 w-full font-ubuntu px-2 sm:px-0 sm:w-8/12  mx-auto mt-20`}
+    >
+      <div className=" sm:flex pb-10 border-b">
         <div className=" sm:hidden sm:w-6/12 mt-auto">
-          <img src={aboutimg} alt="" className="" />
+          <img src={aboutimg} alt="" className=" " />
         </div>
         <div className=" sm:w-7/12 pt-10 px-5 ">
           <span className=" justify-end  text-xl sm:text-3xl  leading-3">
@@ -34,9 +48,13 @@ export default function About() {
           <img src={aboutimg} alt="" className="" />
         </div>
       </div>
-      <div className=" sm:flex py-8">
+      <div className=" sm:flex py-12">
         <div className=" sm:w-7/12">
-          <img src={me} alt="" className="pl-5 sm:px-10 lg:px-20" />
+          <img
+            src={me}
+            alt=""
+            className="px-5 sm:px-10 lg:px-32 sm:mt-10 lg:mt-20"
+          />
         </div>
         <div className="sm:w-5/12 sm:px-0 px-5">
           <div className=" py-4 sm:py-6 lg:py-10">

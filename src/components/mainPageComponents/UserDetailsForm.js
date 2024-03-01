@@ -47,7 +47,7 @@ export default function UserDetailsForm() {
           </h1>
           <div className=" py-5 ">
             {currentForm === "welcomePara" ? (
-              <div className="px-5 flex justify-center items-end h-80 mb-20">
+              <div className="px-5 flex justify-center items-end mb-20">
                 <div>
                   <label
                     htmlFor="name"

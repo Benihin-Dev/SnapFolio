@@ -18,7 +18,7 @@ export default function NavBar({ aboutData }) {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 right-0 shadow-md md:shadow-none  opacity-90 sm:opacity-100 rounded-2xl sm:bg-transparent z-10 block md:flex  sm:w-9/12 sm:mx-auto mx-auto mt-5 justify-between items-center">
+    <div className="fixed top-0 left-0 right-0 shadow-md md:shadow-none  opacity-90 sm:opacity-100 rounded-2xl sm:bg-transparent z-10 block md:flex w-11/12 sm:w-9/12 sm:mx-auto mx-auto mt-5 justify-between items-center">
       <div className="flex mr-2 items-center justify-between">
         <img
           src={aboutData.profile}

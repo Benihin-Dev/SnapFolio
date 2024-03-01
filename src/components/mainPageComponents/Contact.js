@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import formWelcomeImg from "../../img/formWelcomeImg.png";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdAlternateEmail } from "react-icons/md";
@@ -10,8 +10,23 @@ export default function Contact() {
     e.preventDefault();
     alert("Mail sent");
   };
+
+  const [isMounted, setIsMounted] = useState(false);
+  let timeoutId = null;
+
+  useEffect(() => {
+    timeoutId = setTimeout(() => {
+      setIsMounted(true);
+    }, 100);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
   return (
-    <div className=" font-ubuntu  relative  pt-20 sm:pt-0 sm:w-9/12 mx-auto mt-24 sm:flex border-indigo-200 shadow">
+    <div
+      className={` ${
+        isMounted ? "slide-in5" : ""
+      } opacity-0 font-ubuntu  relative  pt-20 sm:pt-0 sm:w-9/12 mx-auto mt-24 sm:flex border-indigo-200 shadow`}
+    >
       <div className=" sm:w-7/12 relative bg-[#ffffffdc]">
         <div className=" w-full  mt-10 ">
           <p className=" w-4/5 sm:mx-auto px-10 text-xl mb-5">
