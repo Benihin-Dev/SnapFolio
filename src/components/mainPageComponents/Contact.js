@@ -11,7 +11,7 @@ export default function Contact() {
     alert("Mail sent");
   };
   return (
-    <div className=" font-ubuntu  relative sm:border pt-10 sm:pt-0 sm:w-9/12 mx-auto mt-20 sm:flex border-indigo-200 shadow">
+    <div className=" font-ubuntu  relative  pt-20 sm:pt-0 sm:w-9/12 mx-auto mt-24 sm:flex border-indigo-200 shadow">
       <div className=" sm:w-7/12 relative bg-[#ffffffdc]">
         <div className=" w-full  mt-10 ">
           <p className=" w-4/5 sm:mx-auto px-10 text-xl mb-5">
@@ -37,10 +37,10 @@ export default function Contact() {
         <img
           src={formWelcomeImg}
           alt=""
-          className=" hidden px-10 sm:block absolute bottom-0"
+          className=" hidden px-20 sm:block absolute bottom-0"
         />
       </div>
-      <div className=" w-10/12 mx-auto sm:w-5/12 pb-10 sm:border-l bg-[#ffffffdc] border-indigo-100  ">
+      <div className=" w-10/12 mx-auto sm:w-5/12 pb-10  bg-[#ffffffdc] border-indigo-100  ">
         <div className="pt-20 sm:pt-0 md:mt-16 mx-4 space-y-2 sm:space-y-5">
           <form action="#" onSubmit={handleSubmit}>
             <label htmlFor="name" className="block text-sm  text-gray-800">
@@ -57,7 +57,7 @@ export default function Contact() {
             <input
               name="email"
               type="text"
-              className="mt-1 block w-full px-3 py-1 text-sm border border-blue-200 rounded shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 hover:border-indigo-400 sm:text-sm"
+              className="mt-1 block w-full  px-3 py-1 text-sm border border-blue-200 rounded shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 hover:border-indigo-400 sm:text-sm"
               placeholder="Emaill"
               autoComplete="email"
               required

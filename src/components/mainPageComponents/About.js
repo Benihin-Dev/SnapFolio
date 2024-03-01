@@ -4,13 +4,13 @@ import me from "../../img/me.png";
 
 export default function About() {
   return (
-    <div className=" w-full font-ubuntu px-5 sm:px-0 sm:w-9/12  mx-auto mt-20">
+    <div className=" w-full font-ubuntu px-5 sm:px-0 sm:w-8/12  mx-auto mt-20">
       <div className=" sm:flex pb-5 border-b">
         <div className=" sm:hidden sm:w-6/12 mt-auto">
           <img src={aboutimg} alt="" className="" />
         </div>
         <div className=" sm:w-7/12 pt-10 px-5 ">
-          <span className=" justify-end  text-xl  leading-3">
+          <span className=" justify-end  text-xl sm:text-3xl  leading-3">
             Welcome to my portfolio-building platform -{" "}
             <span className=" text-indigo-500">snapfolio</span>
             <br />
@@ -36,10 +36,10 @@ export default function About() {
       </div>
       <div className=" sm:flex py-8">
         <div className=" sm:w-7/12">
-          <img src={me} alt="" className="  pr-32 pl-5 sm:px-20" />
+          <img src={me} alt="" className="pl-5 sm:px-10 lg:px-20" />
         </div>
         <div className="sm:w-5/12 sm:px-0 px-5">
-          <div className=" py-5">
+          <div className=" py-4 sm:py-6 lg:py-10">
             <span className="  text-indigo-500 text-3xl">Hello..</span>
           </div>
 
