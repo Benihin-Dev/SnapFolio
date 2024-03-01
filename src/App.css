@@ -86,10 +86,10 @@ body::-webkit-scrollbar-track {
 
 .bgimg {
   position: fixed;
-  background-image: url(./img/backgroundImg.jpg);
-  background-size: fill;
-  background-repeat: no-repeat;
-  filter: blur(2px);
+  background-image: url(./img/backgroundImg.png);
+  /* background-repeat: no-repeat; */
+  filter: blur(5px);
+  object-fit: contain;
   z-index: -1;
   opacity: 1;
 }
