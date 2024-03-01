@@ -43,7 +43,7 @@ export default function Form_ExperienceSection() {
         </h1>
         <div className=" mb-3">
           <label htmlFor="Experience" className="block text-sm  text-gray-500">
-            Work Experience Title
+            Work Experience Title*
           </label>
           <input
             name="title"
@@ -57,7 +57,7 @@ export default function Form_ExperienceSection() {
         </div>
         <div className=" mb-3">
           <label htmlFor="Experience" className="block text-sm  text-gray-500">
-            Year of Experience
+            Year of Experience*
           </label>
           <input
             name="year"
@@ -71,7 +71,7 @@ export default function Form_ExperienceSection() {
         </div>
         <div className=" mb-3">
           <label htmlFor="description" className="block text-sm  text-gray-500">
-            Description about your Experience
+            Description about your Experience*
           </label>
           <textarea
             rows={2}
@@ -88,7 +88,7 @@ export default function Form_ExperienceSection() {
 
         <div className="mt-5 mb-3">
           <label htmlFor="Experience" className="block text-sm  text-gray-500">
-            Work Experience Title
+            Work Experience Title*
           </label>
           <input
             name="title"
@@ -102,7 +102,7 @@ export default function Form_ExperienceSection() {
         </div>
         <div className=" mb-3">
           <label htmlFor="Experience" className="block text-sm  text-gray-500">
-            Year of Experience
+            Year of Experience*
           </label>
           <input
             name="year"
@@ -116,7 +116,7 @@ export default function Form_ExperienceSection() {
         </div>
         <div className=" mb-3">
           <label htmlFor="description" className="block text-sm  text-gray-500">
-            Description about your Experience
+            Description about your Experience*
           </label>
           <textarea
             rows={2}
@@ -133,7 +133,7 @@ export default function Form_ExperienceSection() {
 
         <div className="mt-5 mb-3">
           <label htmlFor="Experience" className="block text-sm  text-gray-500">
-            Work Experience Title
+            Work Experience Title*
           </label>
           <input
             name="title"
@@ -147,7 +147,7 @@ export default function Form_ExperienceSection() {
         </div>
         <div className=" mb-3">
           <label htmlFor="Experience" className="block text-sm  text-gray-500">
-            Year of Experience
+            Year of Experience*
           </label>
           <input
             name="year"
@@ -161,7 +161,7 @@ export default function Form_ExperienceSection() {
         </div>
         <div className=" mb-3">
           <label htmlFor="description" className="block text-sm  text-gray-500">
-            Description about your Experience
+            Description about your Experience*
           </label>
           <textarea
             rows={2}

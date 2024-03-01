@@ -10,7 +10,6 @@ import { Element } from "react-scroll";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
-
 function BlueDarkMainPage() {
   const InitialData = {
     about: {
@@ -158,7 +157,6 @@ function BlueDarkMainPage() {
           );
           setData(response.data);
           setLoading(false);
-          
         } catch (error) {
           setError(true);
           console.error("Error fetching header data:", error);
@@ -170,7 +168,7 @@ function BlueDarkMainPage() {
 
   if (loading) {
     return (
-      <div className=" w-screen h-screen flex justify-center items-center bg-indigo-500">
+      <div className=" w-screen h-screen flex justify-center  items-center bg-indigo-500">
         {" "}
         <div className="flex justify-center gap-[1px] items-center w-8 h-5 ">
           <div className=" w-2 bg-white border border-indigo-400 rounded-md loadingChild"></div>
@@ -185,7 +183,7 @@ function BlueDarkMainPage() {
 
   if (error) {
     return (
-      <div className="flex h-screen justify-center items-center">
+      <div className="flex h-screen justify-center items-center ">
         <h1 className="text-red-700 text-xl">404 error!..</h1>
         {/* <p>Error: {error.message}</p>; */}
       </div>
@@ -200,7 +198,7 @@ function BlueDarkMainPage() {
   const contactData = data.contacts;
 
   return (
-    <div className="font-kanit mainPageBlue overflow-hidden">
+    <div className="font-kanit mainPageBlue overflow-hidden sm:px-8 lg:px-16 ">
       {/* <button
         className=" bg-red-500 rounded-xl"
         onClick={() => {

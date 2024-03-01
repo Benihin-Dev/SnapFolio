@@ -47,7 +47,7 @@ export default function FreeTemplets() {
           handleSelectedTemplet(event);
         }}
         name="purple"
-        className=" text-center border rounded hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
+        className=" text-center border rounded-lg  overflow-hidden hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
       >
         <img
           src={purple[0]}
@@ -60,7 +60,7 @@ export default function FreeTemplets() {
           handleSelectedTemplet(event);
         }}
         name="whiteDark"
-        className=" text-center border rounded hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
+        className=" text-center border rounded-lg overflow-hidden hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
       >
         <img
           src={whiteDark[0]}
@@ -73,7 +73,7 @@ export default function FreeTemplets() {
           handleSelectedTemplet(event);
         }}
         name="blueDark"
-        className=" text-center border rounded hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
+        className=" text-center border rounded-lg overflow-hidden hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
       >
         <img
           src={blueDark[0]}
@@ -86,7 +86,7 @@ export default function FreeTemplets() {
           handleSelectedTemplet(event);
         }}
         name="yellow"
-        className=" text-center border rounded hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
+        className=" text-center border rounded-lg overflow-hidden hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
       >
         <img
           src={yellow[0]}
@@ -100,7 +100,7 @@ export default function FreeTemplets() {
           handleSelectedTemplet(event);
         }}
         name="blue"
-        className=" text-center border rounded hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
+        className=" text-center border rounded-lg overflow-hidden hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
       >
         <img
           src={blue[0]}
@@ -113,7 +113,7 @@ export default function FreeTemplets() {
           handleSelectedTemplet(event);
         }}
         name="pinkDark"
-        className=" text-center border rounded hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
+        className=" text-center border rounded-lg overflow-hidden hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
       >
         <img
           src={pinkDark[0]}
@@ -126,7 +126,7 @@ export default function FreeTemplets() {
           handleSelectedTemplet(event);
         }}
         name="yellowDark"
-        className=" text-center border rounded hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
+        className=" text-center border rounded-lg overflow-hidden hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
       >
         <img
           src={yellowDark[0]}
@@ -139,7 +139,7 @@ export default function FreeTemplets() {
           handleSelectedTemplet(event);
         }}
         name="green"
-        className=" text-center border rounded hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
+        className=" text-center border rounded-lg overflow-hidden hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
       >
         <img
           src={green[0]}
@@ -153,7 +153,7 @@ export default function FreeTemplets() {
           handleSelectedTemplet(event);
         }}
         name="pink"
-        className=" text-center border rounded hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
+        className=" text-center border rounded-lg overflow-hidden hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
       >
         <img
           src={pink[0]}
@@ -166,7 +166,7 @@ export default function FreeTemplets() {
           handleSelectedTemplet(event);
         }}
         name="greenDark"
-        className=" text-center border rounded hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
+        className=" text-center border rounded-lg overflow-hidden hover:shadow-lg shadow border-[#0f387e4b] relative flex   "
       >
         <img
           src={greenDark[0]}
@@ -174,7 +174,7 @@ export default function FreeTemplets() {
           className="border-2   duration-300 border-green-400 hover:border-green-600"
         />
       </div>
-      <div className=" rounded hover:shadow-lg justify-center items-center border h-28 sm:h-full shadow border-[#0f387e4b]  bg-[#ffffffc6] relative flex   ">
+      <div className=" rounded-lg hover:shadow-lg justify-center items-center border h-28 sm:h-full shadow border-[#0f387e4b]  bg-[#ffffffc6] relative flex   ">
         <div className=" w-3/4 ">
           <div className=" w-7 h-4 justify-center mx-auto  loadingParent flex items-center">
             <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
@@ -184,11 +184,11 @@ export default function FreeTemplets() {
             <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
           </div>
           <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
-            <h1>Templet is under development</h1>
+            <h1>Templete is under development</h1>
           </div>
         </div>
       </div>
-      <div className=" rounded hover:shadow-lg justify-center items-center border h-28 sm:h-full shadow border-[#0f387e4b]  bg-[#ffffffc6] relative flex   ">
+      <div className=" rounded-lg hover:shadow-lg justify-center items-center border h-28 sm:h-full shadow border-[#0f387e4b]  bg-[#ffffffc6] relative flex   ">
         <div className=" w-3/4 ">
           <div className=" w-7 h-4 justify-center mx-auto  loadingParent flex items-center">
             <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
@@ -198,7 +198,7 @@ export default function FreeTemplets() {
             <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
           </div>
           <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
-            <h1>Templet is under development</h1>
+            <h1>Templete is under development</h1>
           </div>
         </div>
       </div>

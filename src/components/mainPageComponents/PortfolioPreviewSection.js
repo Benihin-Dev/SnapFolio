@@ -30,10 +30,10 @@ export default function PortfolioPreviewSection() {
       {selectedTemplet === "whiteDark" && <WhiteDark />}
       {selectedTemplet === "yellowDark" && <YellowDark />}
 
-      <div className=" fixed z-50 top-[8%]  sm:top-[15%]  w-full">
-        <div className="w-6/12 sm:w-1/4 flex text-white text-sm">
+      <div className=" fixed z-50 top-[20%]  sm:top-[15%]  w-full">
+        <div className="w-10/12 mx-auto sm:w-9/12 flex text-white text-sm">
           <div
-            className="w-1/4 border-l border-gray-600 rounded-sm flex justify-center items-center px-3 border-r py-1 text-blue-500 border hover:border-gray-400 duration-300 duration-400"
+            className="w-1/6 sm:w-1/12 border-l bg-white border-gray-300 rounded-sm flex justify-center items-center px-3 border-r py-[6px] text-blue-500 border hover:border-gray-400 duration-300 duration-400"
             onClick={() => {
               setActiveState("home");
             }}
@@ -41,7 +41,7 @@ export default function PortfolioPreviewSection() {
             <MdKeyboardBackspace className=" size-5" />
           </div>
           <button
-            className="  w-3/4 border-gray-600 border rounded-sm px-3 py-1 bg-indigo-500 hover:bg-indigo-700 duration-300"
+            className="  w-5/6 sm:w-3/12 border-gray-200 border rounded-sm px-3 py-1 bg-indigo-500 hover:bg-indigo-700 duration-300"
             onClick={() => {
               setActiveState("form");
             }}

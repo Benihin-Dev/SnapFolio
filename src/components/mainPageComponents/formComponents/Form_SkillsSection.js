@@ -47,7 +47,7 @@ export default function Form_SkillsSection() {
         </h1>
         <div className=" mb-3">
           <label htmlFor="SkillTitle" className="block text-sm  text-gray-500">
-            Skill Title
+            Skill Title*
           </label>
           <input
             name="title"
@@ -61,7 +61,7 @@ export default function Form_SkillsSection() {
         </div>
         <div className=" mb-3">
           <label htmlFor="description" className="block text-sm  text-gray-500">
-            Description about your Skill
+            Description about your Skill*
           </label>
           <textarea
             rows={2}
@@ -78,7 +78,7 @@ export default function Form_SkillsSection() {
 
         <div className="mt-5 mb-3">
           <label htmlFor="SkillTitle" className="block text-sm  text-gray-500">
-            Skill Title
+            Skill Title*
           </label>
           <input
             name="title"
@@ -92,7 +92,7 @@ export default function Form_SkillsSection() {
         </div>
         <div className=" mb-3">
           <label htmlFor="description" className="block text-sm  text-gray-500">
-            Description about your Skill
+            Description about your Skill*
           </label>
           <textarea
             rows={2}
@@ -109,7 +109,7 @@ export default function Form_SkillsSection() {
 
         <div className="mt-5 mb-3">
           <label htmlFor="SkillTitle" className="block text-sm  text-gray-500">
-            Skill Title
+            Skill Title*
           </label>
           <input
             name="title"
@@ -123,7 +123,7 @@ export default function Form_SkillsSection() {
         </div>
         <div className=" mb-3">
           <label htmlFor="description" className="block text-sm  text-gray-500">
-            Description about your Skill
+            Description about your Skill*
           </label>
           <textarea
             rows={2}

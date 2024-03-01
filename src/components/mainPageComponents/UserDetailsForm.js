@@ -100,15 +100,15 @@ export default function UserDetailsForm() {
           <img src={formImg} className="object-cover mt-20" alt="" />
         </div>
         {currentForm === "welcomePara" ? (
-          <div className=" sm:hidden opacity-80 absolute bottom-0  -z-10">
+          <div className=" sm:hidden opacity-80 absolute bottom-20  -z-10">
             <img src={formWelcomeImg} alt="" />
           </div>
         ) : currentForm === "idSection" ? (
-          <div className=" sm:hidden opacity-80 absolute bottom-0  -z-10">
+          <div className=" sm:hidden opacity-80 absolute bottom-20  -z-10">
             <img src={formWelcomeImg} alt="" />
           </div>
         ) : currentForm === "aboutSection" ? (
-          <div className=" sm:hidden opacity-80 absolute bottom-0  -z-10">
+          <div className=" sm:hidden opacity-80 absolute bottom-20  -z-10">
             <img src={formWelcomeImg} alt="" />
           </div>
         ) : (

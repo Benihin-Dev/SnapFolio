@@ -26,7 +26,7 @@ export default function About({ aboutData }) {
           className=" h-48 userProfileImg visibleAnimation items-start  mt-10  flex justify-center overflow-hidden"
         />
       </div>
-      <div className="w-full aboutUser upFromDown mt-1 mt sm:mt-12 md:mt-32  lg:mt-48 xl:mt-64 sm:pl-6 md:w-7/12 ">
+      <div className="w-full aboutUser upFromDown mt-1 mt sm:mt-12 md:mt-32  lg:mt-48 xl:mt-64 sm:pl-0 md:w-7/12 ">
         <span className="text-lg text-slate-600 tracking-widest">hello...</span>
         <h1 className="text-4xl md:text-5xl ">
           I'm{" "}

@@ -199,7 +199,7 @@ function GreenMainPage() {
   const contactData = data.contacts;
 
   return (
-    <div className="font-kanit mainPageGreen overflow-hidden">
+    <div className="font-kanit mainPageGreen overflow-hidden sm:w-11/12 mx-auto">
       {/* <button
         className=" bg-red-500 rounded-xl"
         onClick={() => {

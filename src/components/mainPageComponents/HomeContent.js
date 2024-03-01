@@ -40,9 +40,9 @@ export default function HomePage() {
           }}
           className={`${
             homeActiveComponent === "free"
-              ? "border-[#6995e0]  border-b-4"
-              : "border-transparent"
-          } border-b-4 border-[#ffffff9c]  px-8 pb-2 text-[#063991] hover:border-[#6994e0e1] duration-200`}
+              ? "bg-indigo-400 border text-white"
+              : "text-[#063991]"
+          } border rounded-full cursor-pointer border-[#ffffff9c] py-[2px]  px-8  hover:border-[#6994e0e1] duration-300`}
         >
           Free
         </li>
@@ -52,9 +52,9 @@ export default function HomePage() {
           }}
           className={`${
             homeActiveComponent === "premium"
-              ? "border-orange-300  border-b-4"
+              ? "bg-orange-400 text-white  border"
               : ""
-          } border-b-4 border-[#ffffff9c]  px-8 pb-2 text-orange-400 hover:border-orange-300 duration-200`}
+          } border rounded-full py-[2px] cursor-pointer border-[#ffffff9c]  px-8  text-orange-400 hover:border-orange-400 duration-300`}
         >
           Premium
         </li>

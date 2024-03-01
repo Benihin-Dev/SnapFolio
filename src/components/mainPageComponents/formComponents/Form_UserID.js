@@ -31,7 +31,7 @@ export default function Form_UserID() {
         if (fetchedUserData !== null) {
           setLoading(false);
           setUserIdState(true);
-          console.log(fetchedUserData);
+          // console.log(fetchedUserData);
         } else {
           setLoading(false);
           console.log("No Data under the UID");

@@ -3,8 +3,6 @@ import { useMainPageData } from "./MainPageDataProvider";
 import { useTempletCollections } from "./TempletCollectionsProvider";
 
 import { MdKeyboardBackspace } from "react-icons/md";
-import { HiMiniComputerDesktop } from "react-icons/hi2";
-import { ImMobile } from "react-icons/im";
 import { CiGrid32 } from "react-icons/ci";
 
 export default function ShowSelectedTemplet() {

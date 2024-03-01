@@ -42,7 +42,7 @@ export default function Form_AboutSection() {
         </h1>
         <div className=" mb-4">
           <label htmlFor="name" className="block text-sm  text-gray-500">
-            Full Name
+            Full Name*
           </label>
           <input
             name="name"
@@ -59,7 +59,7 @@ export default function Form_AboutSection() {
 
         <div className=" mb-4">
           <label htmlFor="titleName" className="block text-sm text-gray-500">
-            Job Title
+            Job Title*
           </label>
           <input
             name="titleName"
@@ -75,7 +75,7 @@ export default function Form_AboutSection() {
         </div>
         <div className=" mb-4">
           <label htmlFor="description" className="block text-sm  text-gray-500">
-            Description about your Profile
+            Description about your Profile*
           </label>
           <textarea
             rows={4}
@@ -92,7 +92,7 @@ export default function Form_AboutSection() {
         </div>
         <div className=" mb-4">
           <label htmlFor="titleName" className="block text-sm text-gray-500">
-            Place Your CV link
+            Place Your CV link*
           </label>
           <input
             name="cv"

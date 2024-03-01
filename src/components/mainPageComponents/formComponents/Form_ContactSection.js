@@ -74,7 +74,7 @@ export default function Form_ContactSection() {
             </h1>
             <div className=" mb-3">
               <label htmlFor="contact" className="block text-sm  text-gray-500">
-                Email Address
+                Email Address*
               </label>
               <input
                 name="email"
@@ -90,7 +90,7 @@ export default function Form_ContactSection() {
             </div>
             <div className=" mb-3">
               <label htmlFor="mobile" className="block text-sm  text-gray-500">
-                Mobile Number
+                Mobile Number*
               </label>
               <input
                 name="phone"
@@ -109,7 +109,7 @@ export default function Form_ContactSection() {
                 htmlFor="linkdedIn"
                 className="block text-sm  text-gray-500"
               >
-                LinkedIn Link
+                LinkedIn Link*
               </label>
               <input
                 name="linkedin"
@@ -125,7 +125,7 @@ export default function Form_ContactSection() {
             </div>
             <div className=" mb-3">
               <label htmlFor="GitHub" className="block text-sm  text-gray-500">
-                GitHub Link
+                GitHub Link*
               </label>
               <input
                 name="github"
@@ -144,7 +144,7 @@ export default function Form_ContactSection() {
                 htmlFor="Whatsapp"
                 className="block text-sm  text-gray-500"
               >
-                Whatsapp
+                Whatsapp*
               </label>
               <input
                 name="whatsapp"
@@ -163,7 +163,7 @@ export default function Form_ContactSection() {
                 htmlFor="instagram"
                 className="block text-sm  text-gray-500"
               >
-                Instagram
+                Instagram*
               </label>
               <input
                 name="instagram"

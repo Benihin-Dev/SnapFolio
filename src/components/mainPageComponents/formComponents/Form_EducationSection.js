@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { useUserInfoCollections } from "../UserInfoProvider";
 
 export default function Form_EducationSection() {
@@ -44,7 +44,7 @@ export default function Form_EducationSection() {
         </h1>
         <div className=" mb-3">
           <label htmlFor="eduTitle" className="block text-sm  text-gray-500">
-            Education Title
+            Education Title*
           </label>
           <input
             name="title"
@@ -58,7 +58,7 @@ export default function Form_EducationSection() {
         </div>
         <div className=" mb-3">
           <label htmlFor="place" className="block text-sm text-gray-500">
-            School / University Name with Year
+            School / University Name with Year*
           </label>
           <input
             name="place"
@@ -72,7 +72,7 @@ export default function Form_EducationSection() {
         </div>
         <div className=" mb-3">
           <label htmlFor="description" className="block text-sm  text-gray-500">
-            Description about your Education
+            Description about your Education*
           </label>
           <textarea
             rows={3}
@@ -101,7 +101,7 @@ export default function Form_EducationSection() {
         </div>
         <div className=" mb-3">
           <label htmlFor="place" className="block text-sm text-gray-500">
-            School / University Name with Year
+            School / University Name with Year*
           </label>
           <input
             name="place"
@@ -115,7 +115,7 @@ export default function Form_EducationSection() {
         </div>
         <div className=" mb-3">
           <label htmlFor="description" className="block text-sm  text-gray-500">
-            Description about your Education
+            Description about your Education*
           </label>
           <textarea
             rows={3}

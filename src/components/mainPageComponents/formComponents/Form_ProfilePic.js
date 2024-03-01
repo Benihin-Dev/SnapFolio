@@ -80,7 +80,7 @@ export default function Form_ProfilePic() {
                 htmlFor="description"
                 className="block text-sm  text-gray-500"
               >
-                Insert your Profile Picture
+                Insert your Profile Picture*
               </label>
               <div className=" h-40 border border-gray-300 rounded shadow-sm focus:ring-indigo-500 focus:border-indigo-500 hover:border-indigo-400 justify-end flex items-end">
                 <input

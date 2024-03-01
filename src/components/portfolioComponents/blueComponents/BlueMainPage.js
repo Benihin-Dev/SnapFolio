@@ -148,7 +148,7 @@ export default function BlueMainPage() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    if (id !== undefined || null ) {
+    if (id !== undefined || null) {
       setLoading(true);
       const fetchData = async () => {
         try {
@@ -198,7 +198,7 @@ export default function BlueMainPage() {
   const contactData = data.contacts;
 
   return (
-    <div className="font-kanit mainBodyBlue overflow-hidden">
+    <div className="font-kanit mainBodyBlue sm:w-11/12 mx-auto overflow-hidden">
       <NavBar aboutData={aboutData} />
       <Element name="about-section">
         <About aboutData={aboutData} />

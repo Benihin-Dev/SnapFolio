@@ -199,7 +199,7 @@ function DarkPinkMainPage() {
   const contactData = data.contacts;
 
   return (
-    <div className="font-kanit mainBodyDarkPink  overflow-hidden">
+    <div className="font-kanit mainBodyDarkPink  overflow-hidden sm:px-5 lg:px-16">
       {/* <button
         className=" bg-red-500 rounded-xl"
         onClick={() => {

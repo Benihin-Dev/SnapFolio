@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import { useUserInfoCollections } from "../UserInfoProvider";
 
 export default function Form_ProjectsSection() {
@@ -35,16 +35,17 @@ export default function Form_ProjectsSection() {
   }, []);
 
   return (
-    <form onSubmit={handleSubmit} className={` ${
-      isMounted ? "slide-in5" : ""
-    } opacity-0 w-full`}>
+    <form
+      onSubmit={handleSubmit}
+      className={` ${isMounted ? "slide-in5" : ""} opacity-0 w-full`}
+    >
       <div className="border p-5 mb-8 border-[#dec9ff5f] shadow-[#eeeeee57] shadow rounded relative">
         <h1 className=" absolute top-[-12px] text-sm bg-white text-gray-300">
           Project Section
         </h1>
         <div className=" mb-3">
           <label htmlFor="JobTitle" className="block text-sm  text-gray-500">
-            Title of the Project
+            Title of the Project*
           </label>
           <input
             name="title"
@@ -58,7 +59,7 @@ export default function Form_ProjectsSection() {
         </div>
         <div className=" mb-3">
           <label htmlFor="description" className="block text-sm  text-gray-500">
-            Description about your Project
+            Description about your Project*
           </label>
           <textarea
             rows={2}
@@ -73,7 +74,7 @@ export default function Form_ProjectsSection() {
         </div>
         <div className=" mb-3">
           <label htmlFor="JobTitle" className="block text-sm  text-gray-500">
-            Project Link
+            Project Link*
           </label>
           <input
             name="projectLink"
@@ -89,7 +90,7 @@ export default function Form_ProjectsSection() {
 
         <div className="mt-5 mb-3">
           <label htmlFor="JobTitle" className="block text-sm  text-gray-500">
-            Title of the Project
+            Title of the Project*
           </label>
           <input
             name="title"
@@ -103,7 +104,7 @@ export default function Form_ProjectsSection() {
         </div>
         <div className=" mb-3">
           <label htmlFor="description" className="block text-sm  text-gray-500">
-            Description about your Project
+            Description about your Project*
           </label>
           <textarea
             rows={2}
@@ -118,7 +119,7 @@ export default function Form_ProjectsSection() {
         </div>
         <div className=" mb-3">
           <label htmlFor="JobTitle" className="block text-sm  text-gray-500">
-            Project Link
+            Project Link*
           </label>
           <input
             name="projectLink"
@@ -142,7 +143,6 @@ export default function Form_ProjectsSection() {
             className="mt-1 block w-full px-3 py-1 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 hover:border-indigo-400 sm:text-sm"
             placeholder="Project Name"
             autoComplete="name"
-            required
             onChange={(e) => handleChange(e, 2)}
           />
         </div>
@@ -157,7 +157,6 @@ export default function Form_ProjectsSection() {
             className="mt-1 block resize-none w-full px-3 py-1 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 hover:border-indigo-400 sm:text-sm"
             placeholder="Minimum 10 words"
             autoComplete="name"
-            required
             onChange={(e) => handleChange(e, 2)}
           />
         </div>
@@ -171,7 +170,6 @@ export default function Form_ProjectsSection() {
             className="mt-1 block w-full px-3 py-1 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 hover:border-indigo-400 sm:text-sm"
             placeholder="https://project.com"
             autoComplete="name"
-            required
             onChange={(e) => handleChange(e, 2)}
           />
         </div>

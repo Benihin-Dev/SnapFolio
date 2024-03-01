@@ -18,7 +18,7 @@ export default function NavBar({ aboutData }) {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 right-0 shadow-md md:shadow-none  opacity-90 sm:opacity-100 rounded-2xl sm:bg-transparent z-10 block md:flex mx-5  sm:w-4/5 sm:mx-auto mt-5 justify-between items-center">
+    <div className="fixed top-0 left-0 right-0 shadow-md md:shadow-none  opacity-90 sm:opacity-100 rounded-2xl sm:bg-transparent z-10 block md:flex mx-5  sm:w-9/12 sm:mx-auto mt-5 justify-between items-center">
       <div className="flex mr-2 items-center justify-between">
         <img
           src={aboutData.profile}
@@ -71,7 +71,7 @@ export default function NavBar({ aboutData }) {
           value
             ? "hidden md:flex w-2/3 gap-20 items-center text-white py-2"
             : "block md:flex md:w-2/3  "
-        }transparentwhite text-white px-5 relative md:gap-12 shadow text-center md:w-2/3 rounded-3xl md:bg-transparent md:items-end md:justify-around py-2`}
+        }transparentwhite text-white px-5 relative md:gap-5 shadow text-center md:w-2/3 rounded-3xl md:bg-transparent md:items-end md:justify-around py-2`}
       >
         <li
           className={

@@ -27,7 +27,7 @@ export default function PremiumTemplets() {
             <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
           </div>
           <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
-            <h1>Templet is under development</h1>
+            <h1>Templete is under development</h1>
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@ export default function PremiumTemplets() {
             <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
           </div>
           <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
-            <h1>Templet is under development</h1>
+            <h1>Templete is under development</h1>
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@ export default function PremiumTemplets() {
             <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
           </div>
           <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
-            <h1>Templet is under development</h1>
+            <h1>Templete is under development</h1>
           </div>
         </div>
       </div>
@@ -69,7 +69,7 @@ export default function PremiumTemplets() {
             <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
           </div>
           <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
-            <h1>Templet is under development</h1>
+            <h1>Templete is under development</h1>
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@ export default function PremiumTemplets() {
             <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
           </div>
           <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
-            <h1>Templet is under development</h1>
+            <h1>Templete is under development</h1>
           </div>
         </div>
       </div>
@@ -97,7 +97,7 @@ export default function PremiumTemplets() {
             <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
           </div>
           <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
-            <h1>Templet is under development</h1>
+            <h1>Templete is under development</h1>
           </div>
         </div>
       </div>
@@ -111,7 +111,7 @@ export default function PremiumTemplets() {
             <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
           </div>
           <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
-            <h1>Templet is under development</h1>
+            <h1>Templete is under development</h1>
           </div>
         </div>
       </div>
@@ -125,7 +125,7 @@ export default function PremiumTemplets() {
             <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
           </div>
           <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
-            <h1>Templet is under development</h1>
+            <h1>Templete is under development</h1>
           </div>
         </div>
       </div>
@@ -139,7 +139,7 @@ export default function PremiumTemplets() {
             <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
           </div>
           <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
-            <h1>Templet is under development</h1>
+            <h1>Templete is under development</h1>
           </div>
         </div>
       </div>
@@ -153,7 +153,7 @@ export default function PremiumTemplets() {
             <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
           </div>
           <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
-            <h1>Templet is under development</h1>
+            <h1>Templete is under development</h1>
           </div>
         </div>
       </div>
@@ -167,7 +167,7 @@ export default function PremiumTemplets() {
             <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
           </div>
           <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
-            <h1>Templet is under development</h1>
+            <h1>Templete is under development</h1>
           </div>
         </div>
       </div>
@@ -181,7 +181,7 @@ export default function PremiumTemplets() {
             <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
           </div>
           <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
-            <h1>Templet is under development</h1>
+            <h1>Templete is under development</h1>
           </div>
         </div>
       </div>
@@ -195,7 +195,7 @@ export default function PremiumTemplets() {
             <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
           </div>
           <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
-            <h1>Templet is under development</h1>
+            <h1>Templete is under development</h1>
           </div>
         </div>
       </div>
@@ -209,7 +209,7 @@ export default function PremiumTemplets() {
             <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
           </div>
           <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
-            <h1>Templet is under development</h1>
+            <h1>Templete is under development</h1>
           </div>
         </div>
       </div>
