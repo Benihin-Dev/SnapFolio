@@ -174,34 +174,7 @@ export default function FreeTemplets() {
           className="border-2   duration-300 border-green-400 hover:border-green-600"
         />
       </div>
-      <div className=" rounded-lg hover:shadow-lg justify-center items-center border h-28 sm:h-full shadow border-[#0f387e4b]  bg-[#ffffffc6] relative flex   ">
-        <div className=" w-3/4 ">
-          <div className=" w-7 h-4 justify-center mx-auto  loadingParent flex items-center">
-            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
-            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
-            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
-            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
-            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
-          </div>
-          <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
-            <h1>Templete is under development</h1>
-          </div>
-        </div>
-      </div>
-      <div className=" rounded-lg hover:shadow-lg justify-center items-center border h-28 sm:h-full shadow border-[#0f387e4b]  bg-[#ffffffc6] relative flex   ">
-        <div className=" w-3/4 ">
-          <div className=" w-7 h-4 justify-center mx-auto  loadingParent flex items-center">
-            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
-            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
-            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
-            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
-            <div className=" w-2 border border-white bg-gray-300 loadingChild"></div>
-          </div>
-          <div className=" text-center text-[8px] mt-1 leading-3  text-gray-400">
-            <h1>Templete is under development</h1>
-          </div>
-        </div>
-      </div>
+      
     </div>
   );
 }

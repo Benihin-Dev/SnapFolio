@@ -68,7 +68,7 @@ export default function Form_UserID() {
     <>
       <form
         onSubmit={handleSubmit}
-        className={` ${isMounted ? "slide-in5" : ""} opacity-0 w-full mt-10`}
+        className={` ${isMounted ? "slide-in5" : ""} opacity-0 w-full  mt-10`}
       >
         <div className="border p-5 mb-6 border-indigo-200 shadow-[#eeeeee57] shadow rounded relative">
           <div className=" mb-4 ">
@@ -94,8 +94,13 @@ export default function Form_UserID() {
               }}
             />
           </div>
-          <div className="w-full flex justify-end relative">
-            <div onClick={()=>{setCurrentForm("welcomePara")}} className=" cursor-pointer flex justify-center items-center bg-slate-100 border border-gray-00 hover:border-gray-600 rounded px-3">
+          <div className="w-full flex gap-1 justify-end relative">
+            <div
+              onClick={() => {
+                setCurrentForm("welcomePara");
+              }}
+              className=" cursor-pointer flex justify-center items-center bg-slate-100 border border-gray-00 hover:border-gray-600 rounded px-3"
+            >
               <MdKeyboardBackspace />
             </div>
             <button

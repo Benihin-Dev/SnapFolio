@@ -174,7 +174,7 @@ export default function Form_ProjectsSection() {
             onChange={(e) => handleChange(e, 2)}
           />
         </div>
-        <div className="w-full flex justify-end">
+        <div className="w-full gap-1 flex justify-end">
           <div
             onClick={() => {
               setCurrentForm("skillsSection");

@@ -27,7 +27,7 @@ export default function NavBar({ aboutData }) {
       <div className="flex mr-2 items-center justify-between">
         <img
           src={aboutData.profile}
-          className="navBarImg h-9 border  w-8  bg-white items-start  rounded-full  flex justify-center overflow-hidden"
+          className="navBarImg  object-cover object-top h-9 border  w-8  bg-white items-start  rounded-full  flex justify-center overflow-hidden"
         />
 
         <div className="block md:hidden">

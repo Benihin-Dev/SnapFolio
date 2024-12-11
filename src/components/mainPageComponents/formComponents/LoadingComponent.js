@@ -17,19 +17,18 @@ export default function LinkProvideSection() {
       <div
         className={` ${
           isMounted ? "slide-in5" : ""
-        } opacity-0 size-32 circleLoading2 mx-auto rounded-full  relative`}
+        } opacity-0 size-32  mx-auto rounded-full  relative`}
       >
-        <div className="absolute size-32 top-[-6px] left-[-6px]  opacity-40 circleLoading mx-auto rounded-full"></div>
+        <img
+          src="https://cdn.pixabay.com/animation/2022/07/29/03/42/03-42-11-849_512.gif"
+          alt="loading"
+          className=" "
+        />
       </div>
       <div className="  w-full mx-auto text-center mt-[60px]">
         <p className=" text-gray-700">Please Wait..</p>
         <p className=" mt-8 text-indigo-500">
-          <ReactTyped
-            strings={[" Your Protfolio is in a Developing Stage.."]}
-            typeSpeed={100}
-            backSpeed={40}
-            loop
-          />
+          Your Protfolio is in a Developing Stage..
         </p>
         <p className=" text-indigo-300">It's take few minutes</p>
       </div>

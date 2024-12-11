@@ -167,7 +167,7 @@ export default function Form_SkillsSection() {
             onChange={(e) => handleChange(e, 3)}
           />
         </div>
-        <div className="w-full flex justify-end">
+        <div className="w-full gap-1 flex justify-end">
         <div
                 onClick={() => {
                   setCurrentForm("educationSection");

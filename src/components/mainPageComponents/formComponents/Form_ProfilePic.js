@@ -101,7 +101,7 @@ export default function Form_ProfilePic() {
                 type="text"
               ></input>
             </div>
-            <div className="w-full flex justify-end">
+            <div className="w-full gap-1 flex justify-end">
               <div
                 onClick={() => {
                   setCurrentForm("aboutSection");

@@ -3,114 +3,79 @@ import { AiOutlineFund } from "react-icons/ai";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { useMainPageData } from "./MainPageDataProvider";
 import logo from "../../img/logo.png";
+import { useScrollDirection } from "./useScrollDirection";
+import { useNavigate } from "react-router-dom";
 
 export default function NavBar() {
+  const scrollDirection = useScrollDirection();
   const { activeState, setActiveState } = useMainPageData();
   const [handleShowNavItems, SetHandleShowNavItems] = useState(false);
+  const navigate = useNavigate();
+  const navLinks = ["templates", "pricing", "about"];
   return (
     <div
       className={`${
-        activeState === "review" ? "hidden" : ""
-      } fixed top-0 left-0 right-0 z-10 shadow pb-0 pt-3 bg-[#ffffffc6]`}
+        scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
+      } fixed top-0 left-0 right-0 z-10  transition-transform duration-300 font-ubuntu bg-white `}
     >
-      <div className=" relative mx-auto flex justify-between px-3 sm:px-0 pb-0 sm:w-9/12">
-        <div className=" sm:w-1/5  sm:px-5 justify-center items-center">
-          <img src={logo} alt="" className=" h-12 object-contain" />
-        </div>
-        <div className="hidden sm:flex font-ubuntu font-medium sm:w-3/5 h-12 sm:px-5  justify-end items-end">
-          <ul className=" flex justify-end items-end gap-10 pb-0 w-3/5">
-            <li
+      <div className=" w-full relative">
+        <div className=" bg-white relative mx-auto flex justify-between pt-4 pb-5 w-11/12">
+          <div className=" sm:w-1/5  sm:px-5 justify-center items-center">
+            <img
               onClick={() => {
-                setActiveState("home");
+                navigate("/");
               }}
-              className={`${
-                activeState === "home"
-                  ? "border-indigo-500"
-                  : "border-transparent"
-              }  text-indigo-500 cursor-pointer  text-center w-6/12 mx-auto border-b-2  pb-2  hover:border-indigo-500 duration-300 hover:text-indigo-500`}
-            >
-              Home
-            </li>
-            <li
+              src={logo}
+              alt=""
+              className=" h-12 md:h-[50px] object-contain"
+            />
+          </div>
+          <div className=" hidden  md:flex items-center justify-end gap-8">
+            <ul className=" items-center justify-end gap-8 flex">
+              {navLinks.map((link, i) => (
+                <a href={`#${link}`}>
+                  <li
+                    key={i}
+                    className="text-gray-600 hover:text-gray-900 transition-colors cursor-pointer capitalize "
+                  >
+                    {link}
+                  </li>
+                </a>
+              ))}
+            </ul>
+            <button className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition-colors">
+              Get Started
+            </button>
+          </div>
+          <div className="flex justify-center items-center md:hidden">
+            <FaBarsStaggered
               onClick={() => {
-                setActiveState("contact");
+                SetHandleShowNavItems(!handleShowNavItems);
               }}
-              className={`${
-                activeState === "contact"
-                  ? "border-indigo-500"
-                  : "border-transparent"
-              } text-indigo-500 cursor-pointer  text-center w-6/12 mx-auto border-b-2  pb-2 hover:border-indigo-500 duration-300 hover:text-indigo-500`}
-            >
-              Contact
-            </li>
-            <li
-              onClick={() => {
-                setActiveState("about");
-              }}
-              className={`${
-                activeState === "about"
-                  ? "border-indigo-500"
-                  : "border-transparent"
-              } text-indigo-500 cursor-pointer text-center w-6/12 mx-auto border-b-2 pb-2 hover:border-indigo-500 duration-300 hover:text-indigo-500`}
-            >
-              About
-            </li>
-          </ul>
+              className=" cursor-pointer size-6 text-indigo-500 hover:text-indigo-700 duration-200"
+            />
+          </div>
         </div>
         <div
-          onClick={() => {
-            SetHandleShowNavItems(!handleShowNavItems);
-          }}
-          className={` ${
-            handleShowNavItems === true ? "flex" : "hidden"
-          } absolute top-10 right-0 left-0 bg-[#ffffffe6] z-10 border-indigo-500 sm:hidden font-ubuntu w-full font-medium border-b shadow-md  justify-center items-center`}
+          className={`transition-transform -z-10 duration-300 ${
+            !handleShowNavItems ? "translate-x-full" : "translate-x-0"
+          } absolute top-[100%] right-0 w-fit rounded-es-xl shadow-md bg-[#ffffff] `}
         >
-          <ul className=" w-full pt-2 pb-3">
-            <li
-              onClick={() => {
-                setActiveState("home");
-              }}
-              className={`${
-                activeState === "home"
-                  ? "border-indigo-500"
-                  : "border-transparent"
-              } py-1 text-slate-500 cursor-pointer text-center w-6/12 mx-auto border-b-2  hover:border-indigo-500 duration-300 hover:text-indigo-500`}
-            >
-              Home
-            </li>
-            <li
-              onClick={() => {
-                setActiveState("contact");
-              }}
-              className={`${
-                activeState === "contact"
-                  ? "border-indigo-500"
-                  : "border-transparent"
-              } py-1 text-slate-500 cursor-pointer text-center w-6/12 mx-auto border-b-2 hover:border-indigo-500 duration-300 hover:text-indigo-500`}
-            >
-              Contact
-            </li>
-            <li
-              onClick={() => {
-                setActiveState("about");
-              }}
-              className={`${
-                activeState === "about"
-                  ? "border-indigo-500"
-                  : "border-transparent"
-              } py-1 text-slate-500 cursor-pointer text-center w-6/12 mx-auto border-b-2  hover:border-indigo-500 duration-300 hover:text-indigo-500`}
-            >
-              About
-            </li>
-          </ul>
-        </div>
-        <div className="flex justify-center items-center sm:hidden">
-          <FaBarsStaggered
-            onClick={() => {
-              SetHandleShowNavItems(!handleShowNavItems);
-            }}
-            className=" size-6 text-slate-400 hover:text-indigo-500 duration-200"
-          />
+          <div className=" pr-32 pl-5 pt-5 pb-10 capitalize space-y-3  items-end  mx-auto w-11/12">
+            {navLinks.map((link, i) => (
+              <a href={`#${link}`}>
+                <p
+                  key={i}
+                  className=" text-gray-600 py-1 hover:text-gray-900 cursor-pointer"
+                >
+                  {link}
+                </p>{" "}
+              </a>
+            ))}
+            <button className="bg-indigo-600 whitespace-nowrap text-white  px-6 py-2 rounded-md hover:bg-indigo-700 transition-colors">
+              Get Started
+            </button>
+          </div>
         </div>
       </div>
     </div>

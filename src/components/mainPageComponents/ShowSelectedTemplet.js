@@ -117,7 +117,7 @@ export default function ShowSelectedTemplet() {
         </div>
       </div>
       <div className="hidden sm:block sm:w-3/12 mt-9 "></div>
-      <div className=" absolute scrollbarSize3 overflow-auto hidden sm:block  h-[87.5%] top-0 sm:w-3/12 right-0  mt-9">
+      {/* <div className=" absolute scrollbarSize3 overflow-auto hidden sm:block  h-[87.5%] top-0 sm:w-3/12 right-0  mt-9">
         <div className=" space-y-1">
           <div className=" w-11/12 mx-auto border hover:shadow-md shadow border-gray-300 hover:border-blue-500">
             <img
@@ -210,7 +210,7 @@ export default function ShowSelectedTemplet() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

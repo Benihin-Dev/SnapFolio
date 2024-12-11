@@ -147,8 +147,22 @@ export default function BlueMainPage() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 
+  const excludedIds = [
+    "blue",
+    "pink",
+    "green",
+    "purple",
+    "yellow",
+    "pinkDark",
+    "blueDark",
+    "greenDark",
+    "whiteDark",
+    "yellowDark",
+  ];
+
   useEffect(() => {
-    if (id !== undefined || null) {
+    if (id && !excludedIds.includes(id)) {
+      // Check if id exists and is not in the excluded list
       setLoading(true);
       const fetchData = async () => {
         try {
@@ -156,15 +170,16 @@ export default function BlueMainPage() {
             `https://snapfolio-server.onrender.com/snapfolio/${id}`
           );
           setData(response.data);
-          setLoading(false);
         } catch (error) {
           setError(true);
           console.error("Error fetching header data:", error);
+        } finally {
+          setLoading(false);
         }
       };
       fetchData();
     }
-  }, []);
+  }, [id]);
 
   if (loading) {
     return (

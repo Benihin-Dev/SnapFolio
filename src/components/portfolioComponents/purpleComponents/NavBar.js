@@ -22,7 +22,7 @@ export default function NavBar({ aboutData }) {
       <div className="flex mr-2 items-center justify-between">
         <img
           src={aboutData.profile}
-          className="navBarImg size-8 px-1 border hover:border-purple-700 border-purple-400 items-start  rounded-full  flex justify-center overflow-hidden"
+          className="navBarImg  object-cover object-top size-8 px-1 border hover:border-purple-700 border-purple-400 items-start  rounded-full  flex justify-center overflow-hidden"
         />
 
         <div className="block md:hidden">

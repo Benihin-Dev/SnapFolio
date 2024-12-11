@@ -108,7 +108,7 @@ export default function Form_AboutSection() {
             }}
           />
         </div>
-        <div className="w-full flex justify-end">
+        <div className="w-full gap-1 flex justify-end">
           <div
             onClick={() => {
               setCurrentForm("idSection");

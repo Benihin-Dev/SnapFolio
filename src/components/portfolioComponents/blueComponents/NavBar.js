@@ -23,7 +23,7 @@ export default function NavBar({ aboutData }) {
         <img
           src={aboutData.profile}
           alt="#"
-          className="navBarImg size-9 border bg-white border-blue-500 items-start  rounded-full  flex justify-center overflow-hidden"
+          className="navBarImg object-cover object-top size-9 border bg-white border-blue-500 items-start  rounded-full  flex justify-center overflow-hidden"
         />
 
         <div className="block md:hidden">

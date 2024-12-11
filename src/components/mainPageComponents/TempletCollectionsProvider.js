@@ -36,6 +36,69 @@ export const TempletCollectionProvider = ({ children }) => {
   const [homeActiveComponent, setHomeActiveComponent] = useState("free");
   const [selectedTemplet, setSelectedTemplet] = useState("");
 
+  const templateDetails = [
+    {
+      title: "Blue Serenity",
+      name: "blue",
+      img: blue1,
+      desc: "A refreshing blue-themed portfolio template that exudes professionalism and tranquility.",
+    },
+    {
+      title: "Pink Elegance",
+      name: "pink",
+      img: pink1,
+      desc: "A vibrant pink-themed portfolio template that adds a touch of creativity and elegance.",
+    },
+    {
+      title: "Green Harmony",
+      name: "green",
+      img: green1,
+      desc: "A natural green-themed portfolio template perfect for eco-friendly and modern designs.",
+    },
+    {
+      title: "Purple Royalty",
+      name: "purple",
+      img: purple1,
+      desc: "A luxurious purple-themed portfolio template that conveys sophistication and creativity.",
+    },
+    {
+      title: "Yellow Radiance",
+      name: "yellow",
+      img: yellow1,
+      desc: "A bright yellow-themed portfolio template that is energetic and attention-grabbing.",
+    },
+    {
+      title: "Deep Pink Bliss",
+      name: "pinkDark",
+      img: pinkDark1,
+      desc: "A bold dark pink-themed portfolio template for a unique and striking visual impact.",
+    },
+    {
+      title: "Dark Blue Depth",
+      name: "blueDark",
+      img: blueDark1,
+      desc: "A sleek dark blue-themed portfolio template that emphasizes professionalism and depth.",
+    },
+    {
+      title: "Forest Green Glow",
+      name: "greenDark",
+      img: greenDark1,
+      desc: "A calming dark green-themed portfolio template that blends modernity with nature.",
+    },
+    {
+      title: "Monochrome Luxe",
+      name: "whiteDark",
+      img: whiteDark1,
+      desc: "A minimalist white-themed portfolio template with subtle dark tones for a refined look.",
+    },
+    {
+      title: "Golden Twilight",
+      name: "yellowDark",
+      img: yellowDark1,
+      desc: "A warm dark yellow-themed portfolio template that radiates creativity and charm.",
+    },
+  ];
+
   const blue = [blue1, blue2];
   const pink = [pink1, pink2];
   const green = [green1, green2];
@@ -64,6 +127,7 @@ export const TempletCollectionProvider = ({ children }) => {
         setHomeActiveComponent,
         selectedTemplet,
         setSelectedTemplet,
+        templateDetails,
       }}
     >
       {children}

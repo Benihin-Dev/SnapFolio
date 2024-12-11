@@ -179,7 +179,7 @@ export default function Form_ContactSection() {
                 }}
               />
             </div>
-            <div className="w-full flex justify-end relative">
+            <div className="w-full gap-1 flex justify-end relative">
               <div
                 onClick={() => {
                   setCurrentForm("experienceSection");
